@@ -1,0 +1,46 @@
+$primary-color: #4B0082;
+$secondary-color: #f1f3f4;
+$border-color: #dadce0;
+
+// Estilização geral da tabela
+table {
+    width: 100%; // Largura total da tabela
+    border-collapse: collapse; // Remove espaçamento entre células
+    margin: 20px 0; // Espaçamento superior e inferior da tabela
+
+    // Estilização do cabeçalho
+    thead {
+        background-color: $primary-color; // Fundo roxo escuro para o cabeçalho
+
+        th {
+            color: #fff;
+            padding: 10px; // Espaçamento interno das células
+            text-align: center;
+            border-bottom: 2px solid $border-color; // Borda inferior cinza
+            width: 33.33%; // Define largura de cada célula
+        }
+    }
+
+    // Estilização do corpo da tabela
+    tbody {
+        tr {
+            &:nth-child(even) {
+                background-color: $secondary-color; // Fundo cinza claro para linhas pares
+            }
+
+            // Estilização para cada célula
+            td {
+                padding: 10px; // Espaçamento interno das células
+                text-align: center; // Centraliza o texto nas células do corpo
+                border-bottom: 1px solid $border-color; // Borda inferior cinza
+
+                // Adiciona estilos quando o mouse passa sobre uma linha
+                &:hover {
+                    background-color: lighten($secondary-color, 5%); // Fundo levemente mais claro
+
+
+                }
+            }
+        }
+    }
+}

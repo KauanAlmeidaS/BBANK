@@ -1,0 +1,55 @@
+//Cores base
+$primary-color: #4B0082;
+$secondary-color: #f1f3f4;
+$border-color: #dadce0;
+
+//Estilo formulário
+form {
+    max-width: 500px; // Largura
+    margin: 20px auto; // Centraliza o formulário
+    padding: 20px; // Adiciona espaço em volta do conteúdo do formulário
+    border: 1px solid $border-color; // Define uma borda sólida em torno do formulário com cor de borda definida
+    border-radius: 8px; // Arredonda os cantos do formulário
+    background-color: $secondary-color; // Define a cor de fundo para o formulário
+}
+
+// Estilo dos rótulos
+label {
+    display: block; // Torna o rótulo um bloco
+    margin-bottom: 5px; // Adiciona espaço abaixo do rótulo
+    font-weight: bold; // fonte do rótulo negrito
+    color: #333; // cor do texto
+}
+
+// Estilo campos de entrada
+input, textarea {
+    width: 100%; // Torna a área de texto com 100% de largura do formulário
+    padding: 10px; // Adiciona espaço interno
+    border: 1px solid $border-color; // Define uma borda sólida ao redor do campo com cor de borda definida
+    border-radius: 4px; // Arredonda os cantos dos campos de entrada
+    margin-bottom: 10px; // Adiciona espaço abaixo dos campos
+}
+
+// Estilo do botão
+button {
+    width: 100%; // O botão se estende por toda a largura do formulário
+    padding: 10px; // Adiciona espaço interno
+    background-color: $primary-color; // Define a cor de fundo do botão com a cor primária definida
+    color: #fff; // Define a cor do texto do botão como branca
+    border: none; // Remove a borda do botão
+    border-radius: 4px; // Arredonda os cantos do botão
+    font-weight: bold; // Define a fonte do texto do botão como negrito
+    cursor: pointer; // Muda o cursor para ponteiro ao passar sobre o botão
+    transition: background-color 0.3s; // Adiciona transição ao alterar a cor de fundo
+}
+
+// Adiciona efeito de hover ao botão
+button:hover {
+    background-color: lighten($primary-color, 10%); // Clareia a cor de fundo do botão ao passar o mouse
+}
+
+// "NOVA TRANSFERÊNCIA"
+h2 {
+  text-align: center; // Centraliza o texto
+  margin-bottom: 20px; // Adiciona uma margem inferior para separar o título
+}

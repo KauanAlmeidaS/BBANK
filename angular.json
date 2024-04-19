@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bbank"
+    }
+  },
+  "defaultProject": "bbank",
+  "cli": {
+    "analytics": "7dc2d885-64ce-47bd-9405-f9eeec859774"
+  }
 }
